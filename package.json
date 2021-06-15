@@ -1,0 +1,14 @@
+{
+  "name": "my_first_databaseconnection",
+  "version": "1.0.0",
+  "description": "Mongodb server connection to node js driver",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mani",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.6.9"
+  }
+}
