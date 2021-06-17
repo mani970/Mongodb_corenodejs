@@ -4,6 +4,8 @@ const { connect } = require("mongodb").MongoClient; // third party module of dat
 const { parse } = require("querystring"); // in built module in node js //common js
 
 //database URL
+let MONGODB_CLOUD_URL =
+  "mongodb+srv://mani:mani1234@cluster0.alni1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 let MONGODB_LOCAL_URL = "mongodb://localhost:27017/";
 
 function connectDatabase(request, callback) {
@@ -21,7 +23,7 @@ const server = createServer((req, res) => {
     connectDatabase(req, (result) => {
       console.log(result);
       connect(
-        MONGODB_LOCAL_URL,
+        MONGODB_CLOUD_URL,
         {
           useUnifiedTopology: true,
           useNewUrlParser: true,
